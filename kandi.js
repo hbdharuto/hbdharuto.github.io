@@ -1013,10 +1013,11 @@ if ($( window ).height() > $( window ).width()) {$(".table").addClass("inpotrait
 assetLoader.downloadAll();
 })(jQuery);
 
-$('.no-zoom').bind('touchend', function(e) {
-  e.preventDefault();
-  // Add your code here. 
-  $(this).click();
-  // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
-})
+document.addEventListener("touchstart", event => {
+    if(event.touches.length > 1) {
+        console.log("zoom plz stahp");
+        event.preventDefault();
+        event.stopPropagation(); // maybe useless
+    }
+}, {passive: false});
 
