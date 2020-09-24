@@ -1126,7 +1126,7 @@ function shakeChest() {
 
 function loadGifts() {
   for (var aaa = 0; aaa < checkPoints.length; aaa++) {
-    if (localStorage.getItem("hawwugame_lasthighest") > checkPoints[aaa]) {
+    if (localStorage.getItem("hawwugame_lasthighest") >= checkPoints[aaa]) {
       $("#gift"+aaa).find(".centered").remove();
       $("#gift"+aaa).find("img").attr("src",realIMG[aaa]);
       $("#gift"+aaa).addClass("unlocked");
