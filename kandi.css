@@ -267,8 +267,6 @@ padding:10px;background:#ef5350;text-align: center;color:#FAFAFA;width:100%;font
 transform: rotate(-90deg);
 width: 600px;
 height: 100vh;
-overflow-x: hidden;
+
 position: absolute;
-top: 0;
-left: calc(((100vw - 360px) / 2) + 37px);
-margin: 0px !important;}
+}
