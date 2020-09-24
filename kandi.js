@@ -1006,9 +1006,9 @@ $('.restart').click(function() {
   startGame();
 });
 
-alert($( window ).height() + ", " + $( window ).width());
+/*alert($( window ).height() + ", " + $( window ).width());
 
-if ($( window ).height() > $( window ).width()) {$("html").addClass(".inpotrait")}
+if ($( window ).height() > $( window ).width()) {$("html").addClass(".inpotrait")}*/
 
 assetLoader.downloadAll();
 })(jQuery);
