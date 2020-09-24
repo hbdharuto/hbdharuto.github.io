@@ -1008,7 +1008,19 @@ $('.restart').click(function() {
 
 /*alert($( window ).height() + ", " + $( window ).width());*/
 
-if ($( window ).height() > $( window ).width()) {$(".table").addClass("inpotrait")}
+if ($( window ).height() > $( window ).width()) {
+
+  $(".table").addClass("inpotrait");
+  
+  if ($(window).width() < 360) {
+    $('head').append('<meta name="viewport" content="width=device-width, initial-scale='+ (1 * ($(window).width() / 360)) +'">');
+  }
+
+  else {
+    $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+  }
+}
+
 
 assetLoader.downloadAll();
 })(jQuery);
