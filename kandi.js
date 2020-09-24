@@ -70,9 +70,40 @@ var assetLoader = (function() {
     'cliff'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/grassCliffRight.png',
     'spikes'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/spikes.png',
     'box'           : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/boxCoin.png',
-    'slime'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/slime.png'
-  };
-
+    'slime'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/slime.png',
+    'jumpbut'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/jumpbutton.png',
+    'bgpolosan'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bg_polos.png',
+    'bgbutton'      : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bg_menu.png',
+    'menubg'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu-bg.png',
+    'creditsbg'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/credits-bg.png',
+    'favicon'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/favicon.png',
+    'menu_start'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_start.png',
+    'menu_lang'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_lang.png',
+    'menu_gifts'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_gifts.png',
+    'menu_credits'  : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_credits.png',
+    'presentitle'   : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/presentitle.png',
+    'shadow1'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow1.png',
+    'shadow2'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow2.png',
+    'shadow3'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow3.png',
+    'shadow4'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow4.png',
+    'shadow5'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow5.png',
+    'shadow6'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow6.png',
+    'soundOn'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/soundOn.png',
+    'soundOff'      : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/soundOff.png',
+    'buttonclose'   : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/button_close.png',
+    'rokku'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/afdfd23u2098.png',
+    'rukarukapi'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/suweiur24343.png',
+    'gakkun'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/fjdkfj9e243090.png',
+    'ayuyu'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/eioie0ieowi2.png',
+    'reihiii'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/isiea292u.png',
+    'shooo'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/jfdkjfd29292.png',
+    'tickus'        :'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tikus.png',
+    'kolor'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/kolor.png',
+    'toast'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tost.png',
+    'bukbuku'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/bukabuku.png',
+    'sampan'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/sampanye.png',
+    'music'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/music.png'
+}
   // sounds dictionary
   this.sounds      = {
     'bg'            : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/sounds/bg.mp3',
@@ -906,7 +937,7 @@ $("#jumpbutton").click(function() {
 $('.credits').click(function() {
 	$("#jumpbutton").fadeOut();
   $('#main').fadeOut();
-  $('#credits').fadeIn();
+  $('#credits').fadeIn('slow');
   $('#menu').addClass('credits');
 });
 $('.back').click(function() {
@@ -914,12 +945,37 @@ $('.back').click(function() {
   $('#credits').fadeOut();
   $('#presents').fadeOut();
   $('#game-over').fadeOut();
+  $('#lang').fadeOut();
   //$('#canvas').fadeOut();
   $('#main').fadeIn();
   $('#menu').fadeIn();
   $('#menu').removeClass('credits');
    $('#menu').removeClass('hawwugifts');
 });
+
+$('.lang').click(function() {
+  $("#jumpbutton").fadeOut();
+  $('#main').fadeOut();
+  $('#lang').fadeIn();
+  $('#menu').addClass('lang');
+});
+
+
+$('.lang_eng').click(function() {
+  localStorage.hawwugame_language = "en";
+  $('#lang').fadeOut();
+  $('#main').fadeIn();
+  $('#menu').removeClass('lang');
+});
+
+$('.lang_jpn').click(function() {
+  localStorage.hawwugame_language = "jp";
+  $('#lang').fadeOut();
+  $('#main').fadeIn();
+  $('#menu').removeClass('lang');
+});
+
+
 
 $('.hawwugifts').click(function() {
   for (var aaa = 0; aaa < checkPoints.length; aaa++) {
@@ -929,14 +985,17 @@ $('.hawwugifts').click(function() {
       $("#gift"+aaa).addClass("unlocked");
     }
   }
-  $('.unlocked').click(function() {
-  arrNum = $(this).attr('id').split("gift")[1];
 
-  $("#present_bigwindow img").attr("src",giftIMG[arrNum]);
+$('.unlocked').click(function() {
+  arrNum = $(this).attr('id').split("gift")[1];
+ $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="ucapannya"></div><div class="komentarharuto"></div><a href="javascript:void(0)" class="button back"></a>');
+  $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
+  $("#present_bigwindow .ucapannya").append('<img src="'+ realIMG[arrNum] +'" style="width:50px!important">');
   $("#present_bigwindow").fadeIn();
 
+
 });
-  
+
 	$("#jumpbutton").fadeOut();
   $('#main').fadeOut();
   $('#presents').fadeIn();
@@ -996,9 +1055,11 @@ for (var aaa = 0; aaa < checkPoints.length; aaa++) {
 
 $('.unlocked').click(function() {
 	arrNum = $(this).attr('id').split("gift")[1];
-
-	$("#present_bigwindow img").attr("src",giftIMG[arrNum]);
+ $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="ucapannya"></div><div class="komentarharuto"></div><a href="javascript:void(0)" class="button back"></a>');
+	$("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
+  $("#present_bigwindow .ucapannya").append('<img src="'+ realIMG[arrNum] +'" style="width:50px!important">');
 	$("#present_bigwindow").fadeIn();
+
 
 });
 
@@ -1007,6 +1068,9 @@ $('#present_bigwindow').click(function() {
 	$(this).fadeOut();
 
 });
+
+
+
 
 
 $('.play').click(function() {
