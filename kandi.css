@@ -263,12 +263,12 @@ padding:10px;background:#ef5350;text-align: center;color:#FAFAFA;width:100%;font
 
 
 
-html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;}
+.inpotrait {
+transform: rotate(-90deg);
+width: 600px;
+height: 100vh;
+overflow-x: hidden;
+position: absolute;
+top: 0;
+left: calc(((100vw - 360px) / 2) + 37px);
+margin: 0px !important;}
