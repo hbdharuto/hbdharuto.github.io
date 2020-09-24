@@ -1077,11 +1077,6 @@ $('.back_movie').click(function() {
 });
 
 
-$('#chestbutton').click(function() {
-
-  $('#movie').fadeIn();
-
-});
 
 
 
@@ -1112,8 +1107,15 @@ $('.lang_jpn').click(function() {
 
 function shakeChest() {
    if (localStorage.getItem("hawwugame_lasthighest") > 1499) {
+    
+    
     $("#chestbutton").css('background-image', 'url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/openchest.png)');   
     $("#chestbutton").effect( "shake", { direction: "up", times: 4, distance: 6}, 1000 );
+    $('#chestbutton').click(function() {
+
+        $('#movie').fadeIn();
+
+      });
 
   }
 
