@@ -1006,6 +1006,8 @@ $('.restart').click(function() {
   startGame();
 });
 
+alert($( window ).height() + ", " + $( window ).width());
+
 if ($( window ).height() > $( window ).width()) {$("html").addClass(".inpotrait")}
 
 assetLoader.downloadAll();
