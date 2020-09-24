@@ -265,8 +265,6 @@ padding:10px;background:#ef5350;text-align: center;color:#FAFAFA;width:100%;font
 
 .inpotrait {
 transform: rotate(-90deg);
-width: 600px;
-height: 100vh;
-
-position: absolute;
+    width: 600px;
+    height: 360px;
 }
