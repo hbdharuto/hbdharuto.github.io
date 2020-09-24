@@ -929,6 +929,14 @@ $('.hawwugifts').click(function() {
       $("#gift"+aaa).addClass("unlocked");
     }
   }
+  $('.unlocked').click(function() {
+  arrNum = $(this).attr('id').split("gift")[1];
+
+  $("#present_bigwindow img").attr("src",giftIMG[arrNum]);
+  $("#present_bigwindow").fadeIn();
+
+});
+  
 	$("#jumpbutton").fadeOut();
   $('#main').fadeOut();
   $('#presents').fadeIn();
