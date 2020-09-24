@@ -1,2 +1,46 @@
-test
-<img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/assets/images/bg_19201080.png">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Run! Run! Harurun!!!</title>
+  <link rel="stylesheet" href="kandi.css" type="text/css" media="screen">
+  <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,600;0,800;1,100;1,300;1,600;1,800&display=swap" rel="stylesheet"> 
+</head>
+<body><div class="table">
+  <div class="wrapper">
+    <div class="sound sound-off"></div>
+   
+    <div id="menu">
+      <div id="progress">
+        <div id="percent">Downloading: <span id="p"></span></div>
+        <progress id="progress-bar" value="0"></progress>
+      </div>
+      <div id="main">
+       
+        <a href="javascript:void(0)" class="button play"><img src="imgs/menu_start.png"></a><a href="javascript:void(0)" class="button lang"><img src="imgs/menu_lang.png"></a><a href="javascript:void(0)" class="button hawwugifts"><img src="imgs/menu_gifts.png"></a><a href="javascript:void(0)" class="button credits"><img src="imgs/menu_credits.png"></a>
+      </div>
+      <div id="credits">
+        later here
+        <a href="javascript:void(0)" class="button back"></a>
+      </div>
+    </div>
+    
+    <canvas id="canvas" width="800" height="480">
+      <p>Your browser does not support the required functionality to play this game.</p>
+      <p>Please update to a modern browser such as <a href="www.google.com/chrome/‎">Google Chrome</a> to play.</p>
+    </canvas> <div id="jumpbutton"></div>
+    <div id="game-over">
+      <h2>Haruto ran <span id="score"></span> meters!</h2>
+      <a href="javascript:void(0)" class="button restart">Try Again?</a><a href="javascript:void(0)" class="button back">Main Menu</a>
+    </div>
+    <div id="presents"><div id="present_title"><img src="imgs/presentitle.png"></div><div class="presentholder" id="gift0"><img src="imgs/gifts/shadow1.png"><div class="centered">Score: 100</div></div><div class="presentholder" id="gift1"><img src="imgs/gifts/shadow2.png"><div class="centered">Score: 200</div></div><div class="presentholder" id="gift2"><img src="imgs/gifts/shadow3.png"><div class="centered">Score: 400</div></div><div class="presentholder" id="gift3"><img src="imgs/gifts/shadow4.png"><div class="centered">Score: 700</div></div><div class="presentholder" id="gift4"><img src="imgs/gifts/shadow5.png"><div class="centered">Score: 1100</div></div><div class="presentholder" id="gift5"><img src="imgs/gifts/shadow6.png"><div class="centered">Score: 1500</div></div>
+    <div id="present_bigwindow"><img></div><a href="javascript:void(0)" class="button back"></a>
+    </div>
+  </div></div>
+  <script type="text/javascript" src="kandi.js"></script>
+</body>
+</html>
