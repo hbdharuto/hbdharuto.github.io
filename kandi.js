@@ -990,7 +990,7 @@ $('.unlocked').click(function() {
   arrNum = $(this).attr('id').split("gift")[1];
  $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="ucapannya"></div><div class="komentarharuto"></div><a href="javascript:void(0)" class="button back"></a>');
   $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
-  $("#present_bigwindow .ucapannya").append('<img src="'+ realIMG[arrNum] +'" style="width:50px!important">');
+  $("#present_bigwindow .ucapannya").append('<img src="'+ faceIMG[arrNum] +'" style="width:50px!important">');
   $("#present_bigwindow").fadeIn();
 
 
@@ -1044,6 +1044,13 @@ var giftIMG = ["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/
 "https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/sampanye.png",
 "https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/music.png"];
 
+var faceIMG = ["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_rock.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_ruka.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_gaku.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_ayumu.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_reiji.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_sho.png"];
+
 
 for (var aaa = 0; aaa < checkPoints.length; aaa++) {
   	if (localStorage.getItem("hawwugame_lasthighest") > checkPoints[aaa]) {
@@ -1057,7 +1064,7 @@ $('.unlocked').click(function() {
 	arrNum = $(this).attr('id').split("gift")[1];
  $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="ucapannya"></div><div class="komentarharuto"></div><a href="javascript:void(0)" class="button back"></a>');
 	$("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
-  $("#present_bigwindow .ucapannya").append('<img src="'+ realIMG[arrNum] +'" style="width:50px!important">');
+  $("#present_bigwindow .ucapannya").append('<img src="'+ faceIMG[arrNum] +'" style="width:50px!important">');
 	$("#present_bigwindow").fadeIn();
 
 
