@@ -243,7 +243,7 @@ margin-top: 170px;
 #present_bigwindow{position: absolute;
   background-color:#00437b;top:0px;left:0px;display:none;z-index: 20;width:600px;height:360px;cursor:pointer;padding:15px;}
 
-#present_bigwindow img {width:200px!important;}
+#present_bigwindow img {width:175px!important;}
 
 #presents .presentholder {display:inline-block;margin:5px 10px;position:relative;width:125px;height:125px;background:#FAFAFA;border:5px solid #00437b;}
 
@@ -286,26 +286,23 @@ transform: rotate(-90deg);
 
 .nama_hadiah {
   color:#f0f0f0;
-  font-size:20px;
+  font-size:15px;
   text-transform: uppercase;
-  font-weight:bold;
-  letter-spacing:-1px;
+  font-weight:bold; width:420px;margin:auto;
+  letter-spacing:0px;margin-bottom:10px;
 }
 
-.ucapannya, .komentarharuto {display:inline-block;width:calc(50% - 20px); margin:10px;padding:10px;font-size:10px;vertical-align: top;}
+#presentnyaho td {margin:10px;padding:10px;font-size:10px;vertical-align: middle;}
 
-.ucapannya img, .komentarharuto img {border:5px solid #f0f0f0;background:rgba(255,255,255,0.5);}
+#presentnyaho img {border:5px solid #f0f0f0;background:rgba(255,255,255,0.5);}
 
 .ucapannya {
   background-color:#F9D7D1;
-
+width:40%;
 }
 
-.ucapannya img {float:right;}
 
 .komentarharuto {
-
+width:40%;
   background-color:#aed7f9;
 }
-
-.komentarharuto img {float:left;}

@@ -885,7 +885,17 @@ function startGame() {
  */
 function gameOver() {
   stop = true;
-  localStorage.setItem("hawwugame_lasthighest", score);
+  if (localStorage.hawwugame_lasthighest !== 'undefined') {
+
+    if (score > localStorage.hawwugame_lasthighest) {
+       localStorage.setItem("hawwugame_lasthighest", score);
+     }
+  }
+
+  else {
+    localStorage.setItem("hawwugame_lasthighest", score);
+  }
+  
   $('#score').html(score);
   $('#game-over').fadeIn();
   assetLoader.sounds.bg.pause();
@@ -988,9 +998,9 @@ $('.hawwugifts').click(function() {
 
 $('.unlocked').click(function() {
   arrNum = $(this).attr('id').split("gift")[1];
- $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="komentarharuto"><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></div><div class="ucapannya"></div><a href="javascript:void(0)" class="button back"></a>');
+ $("#present_bigwindow").html('<div class="nama_hadiah"></div><table id="presentnyaho"><tr><td><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></td><td class="komentarharuto"></td><td class="ucapannya"></td><td class="gambarucapan"></td></tr></table><a href="javascript:void(0)" class="button back"></a>');
   $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
-  $("#present_bigwindow .ucapannya").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
+  $("#present_bigwindow .gambarucapan").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
   $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
   $("#present_bigwindow .komentarharuto").append(komentarArray[arrNum]);
   $("#present_bigwindow .nama_hadiah").append(hadiahArray[arrNum]);
@@ -1072,9 +1082,9 @@ for (var aaa = 0; aaa < checkPoints.length; aaa++) {
 
 $('.unlocked').click(function() {
   arrNum = $(this).attr('id').split("gift")[1];
- $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="komentarharuto"><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></div><div class="ucapannya"></div><a href="javascript:void(0)" class="button back"></a>');
+ $("#present_bigwindow").html('<div class="nama_hadiah"></div><table id="presentnyaho"><tr><td><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></td><td class="komentarharuto"></td><td class="ucapannya"></td><td class="gambarucapan"></td></tr></table><a href="javascript:void(0)" class="button back"></a>');
   $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
-  $("#present_bigwindow .ucapannya").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
+  $("#present_bigwindow .gambarucapan").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
   $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
   $("#present_bigwindow .komentarharuto").append(komentarArray[arrNum]);
   $("#present_bigwindow .nama_hadiah").append(hadiahArray[arrNum]);
@@ -1082,7 +1092,6 @@ $('.unlocked').click(function() {
 
 
 });
-
 $('#present_bigwindow').click(function() {
 
 	$(this).fadeOut();
