@@ -55,10 +55,10 @@ a {
   background-color: grey;
 }
 #menu.main {
-  background-image: url('imgs/menu-bg.png');
+  background-image: url('https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu-bg.png');
 }
 #menu.credits {
-  background-image: url('imgs/credits-bg.png');
+  background-image: url('https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/credits-bg.png');
 }
 
 #progress {
@@ -97,17 +97,17 @@ a {
   text-align:center;
   cursor: pointer;
   z-index: 3;
-  background:url(imgs/jumpbutton.png);
+  background:url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/jumpbutton.png);
   color: white;
   border-radius:100%;
 }
 
 .sound-on {
-  background-image: url('imgs/soundOn.png');
+  background-image: url('https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/soundOn.png');
   background-repeat: no-repeat;
 }
 .sound-off {
-  background-image: url('imgs/soundOff.png');
+  background-image: url('https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/soundOff.png');
   background-repeat: no-repeat;
 }
 
@@ -140,7 +140,7 @@ a {
 
 #game-over .button {
   line-height: 30px;
-background-image: url(imgs/bg_menu.png);
+background-image: url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bg_menu.png);
 background-size: cover;
 width: 120px;display:inline-block;margin:10px;
 }
@@ -173,7 +173,7 @@ margin-top: 170px;
 
 
 #presents .button.back, #credits .button.back {
-  background-image:url(imgs/button_close.png);
+  background-image:url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/button_close.png);
   background-size:cover;
    display: block;
    width: 40px;
@@ -234,7 +234,7 @@ margin-top: 170px;
   width: 600px;
   height: 360px;
   position: absolute;
-  background: url(imgs/bg_polos.png);
+  background: url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bg_polos.png);
 
 }
 
@@ -262,7 +262,7 @@ padding:10px;background:#ef5350;text-align: center;color:#FAFAFA;width:100%;font
 .table {margin-top:calc((100vh - 360px) / 2); margin-left:calc((100vw - 600px) / 2);position: relative}
 
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+@media screen and (orientation: portrait) {
   html {
     transform: rotate(-90deg);
     transform-origin: left top;

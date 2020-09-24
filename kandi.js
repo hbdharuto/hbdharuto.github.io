@@ -54,30 +54,30 @@ function bound(num, low, high) {
 var assetLoader = (function() {
   // images dictionary
   this.imgs        = {
-    'bg'            : 'imgs/bg.png',
-    'sky'           : 'imgs/sky.png',
-    'backdrop'      : 'imgs/backdrop.png',
-    'backdrop2'     : 'imgs/backdrop_ground.png',
-    'grass'         : 'imgs/grass.png',
-    'avatar_normal' : 'imgs/normal_walk.png',
-    'water'         : 'imgs/water.png',
-    'grass1'        : 'imgs/grassMid1.png',
-    'grass2'        : 'imgs/grassMid2.png',
-    'bridge'        : 'imgs/bridge.png',
-    'plant'         : 'imgs/plant.png',
-    'bush1'         : 'imgs/bush1.png',
-    'bush2'         : 'imgs/bush2.png',
-    'cliff'         : 'imgs/grassCliffRight.png',
-    'spikes'        : 'imgs/spikes.png',
-    'box'           : 'imgs/boxCoin.png',
-    'slime'         : 'imgs/slime.png'
+    'bg'            : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bg.png',
+    'sky'           : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/sky.png',
+    'backdrop'      : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/backdrop.png',
+    'backdrop2'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/backdrop_ground.png',
+    'grass'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/grass.png',
+    'avatar_normal' : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/normal_walk.png',
+    'water'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/water.png',
+    'grass1'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/grassMid1.png',
+    'grass2'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/grassMid2.png',
+    'bridge'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bridge.png',
+    'plant'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/plant.png',
+    'bush1'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bush1.png',
+    'bush2'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bush2.png',
+    'cliff'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/grassCliffRight.png',
+    'spikes'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/spikes.png',
+    'box'           : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/boxCoin.png',
+    'slime'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/slime.png'
   };
 
   // sounds dictionary
   this.sounds      = {
-    'bg'            : 'sounds/bg.mp3',
-    'jump'          : 'sounds/jump.mp3',
-    'gameOver'      : 'sounds/gameOver.mp3'
+    'bg'            : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/sounds/bg.mp3',
+    'jump'          : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/sounds/jump.mp3',
+    'gameOver'      : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/sounds/gameOver.mp3'
   };
 
   var assetsLoaded = 0;                                // how many assets have been loaded
@@ -391,7 +391,7 @@ var player = (function(player) {
   player.isJumping = false;
 
   // spritesheets
-  player.sheet     = new SpriteSheet('imgs/normal_walk.png', player.width, player.height);
+  player.sheet     = new SpriteSheet('https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/normal_walk.png', player.width, player.height);
   player.walkAnim  = new Animation(player.sheet, 4, 0, 15);
   player.jumpAnim  = new Animation(player.sheet, 4, 15, 15);
   player.fallAnim  = new Animation(player.sheet, 4, 11, 11);
@@ -955,20 +955,20 @@ $('.sound').click(function() {
 });
 
 var checkPoints = [100,200,400,700,1100,1500];
-var realIMG=["imgs/gifts/afdfd23u2098.png",
-"imgs/gifts/suweiur24343.png",
-"imgs/gifts/fjdkfj9e243090.png",
-"imgs/gifts/eioie0ieowi2.png",
-"imgs/gifts/isiea292u.png",
-"imgs/gifts/jfdkjfd29292.png"];
+var realIMG=["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/afdfd23u2098.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/suweiur24343.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/fjdkfj9e243090.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/eioie0ieowi2.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/isiea292u.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/jfdkjfd29292.png"];
 
 
-var giftIMG = ["imgs/gifts/tikus.png",
-"imgs/gifts/kolor.png",
-"imgs/gifts/tost.png",
-"imgs/gifts/bukabuku.png",
-"imgs/gifts/sampanye.png",
-"imgs/gifts/music.png"];
+var giftIMG = ["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tikus.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/kolor.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tost.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/bukabuku.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/sampanye.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/music.png"];
 
 
 for (var aaa = 0; aaa < checkPoints.length; aaa++) {
