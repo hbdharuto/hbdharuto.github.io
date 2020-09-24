@@ -294,14 +294,18 @@ transform: rotate(-90deg);
 
 .ucapannya, .komentarharuto {display:inline-block;width:calc(50% - 20px); margin:10px;padding:10px;font-size:10px;}
 
-
+.ucapannya img, .komentarharuto img {border:5px solid #f0f0f0;background:rgba(255,255,255,0.5);}
 
 .ucapannya {
   background-color:#F9D7D1;
 
 }
 
+.ucapannya img {float:right;}
+
 .komentarharuto {
 
   background-color:#aed7f9;
 }
+
+.komentarharuto img {float:left;}

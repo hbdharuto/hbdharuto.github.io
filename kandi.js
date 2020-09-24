@@ -988,9 +988,12 @@ $('.hawwugifts').click(function() {
 
 $('.unlocked').click(function() {
   arrNum = $(this).attr('id').split("gift")[1];
- $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="ucapannya"></div><div class="komentarharuto"></div><a href="javascript:void(0)" class="button back"></a>');
+ $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="komentarharuto"><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></div><div class="ucapannya"></div><a href="javascript:void(0)" class="button back"></a>');
   $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
-  $("#present_bigwindow .ucapannya").append('<img src="'+ faceIMG[arrNum] +'" style="width:50px!important">');
+  $("#present_bigwindow .ucapannya").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
+  $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
+  $("#present_bigwindow .komentarharuto").append(komentarArray[arrNum]);
+  $("#present_bigwindow .nama_hadiah").append(hadiahArray[arrNum]);
   $("#present_bigwindow").fadeIn();
 
 
@@ -1052,6 +1055,13 @@ var faceIMG = ["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/
 "https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_sho.png"];
 
 
+var hadiahArray = ['His biggest catch (Rat)','Ge***o Pi**e Pajamas','Transparent and anti-burn toaster','Rare Books about Yoshida Shouin','2001 Domaine Arnaud Ente Meursault, Champagne Tower, and Pickup Lines for Dummies','A custom-made music box. Music: “Le Carnaval des Animaux” No. 13, “Le Cygne”'];
+
+var ucapanArray = ['“Nya!! Nyaaaa!!!!”','“I remember you saying you want them! Nice taste, Haru-kun!”','“I’m pretty sure you won’t burn your toast anymore. Use it nicely, okay?”','“These are the rarest books I can find… Y--you don’t have them yet, right? I hope you like them…”','“That one has a fruity taste, especially lemon, so I’m sure you’ll like it. Also learn better pickup lines from this book. Maybe you can make a better impersonation that way.”','“Do you remember this melody?”'];
+
+var komentarArray = ['“Gaku-san…!!! I’m very touched!!! I will eat a lot of toasts from now on!! Breakfast, lunch, dinner…”<br><br>(Gaku: “No, you don’t have to go that far ^^;”)','“These….!!! I’ve been searching for them for years….!!!! Ayumu-san, thank you so much!!!!”','“Tower…!!! I want to pour the champagne!!!! Also I will learn a lot, Reiji-san!! Banzai to your beautiful eyes!”<br><br>(Reiji: “IT’S ‘CHEERS’, YOU LITTLE--)','“I do. I will always remember. Thank you very much, Sho.”'];
+
+
 for (var aaa = 0; aaa < checkPoints.length; aaa++) {
   	if (localStorage.getItem("hawwugame_lasthighest") > checkPoints[aaa]) {
   		$("#gift"+aaa).find(".centered").remove();
@@ -1061,11 +1071,14 @@ for (var aaa = 0; aaa < checkPoints.length; aaa++) {
   }
 
 $('.unlocked').click(function() {
-	arrNum = $(this).attr('id').split("gift")[1];
- $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="ucapannya"></div><div class="komentarharuto"></div><a href="javascript:void(0)" class="button back"></a>');
-	$("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
-  $("#present_bigwindow .ucapannya").append('<img src="'+ faceIMG[arrNum] +'" style="width:50px!important">');
-	$("#present_bigwindow").fadeIn();
+  arrNum = $(this).attr('id').split("gift")[1];
+ $("#present_bigwindow").html('<div class="nama_hadiah"></div><div class="komentarharuto"><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></div><div class="ucapannya"></div><a href="javascript:void(0)" class="button back"></a>');
+  $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
+  $("#present_bigwindow .ucapannya").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
+  $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
+  $("#present_bigwindow .komentarharuto").append(komentarArray[arrNum]);
+  $("#present_bigwindow .nama_hadiah").append(hadiahArray[arrNum]);
+  $("#present_bigwindow").fadeIn();
 
 
 });
