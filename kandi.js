@@ -1059,7 +1059,7 @@ var hadiahArray = ['His biggest catch (Rat)','Ge***o Pi**e Pajamas','Transparent
 
 var ucapanArray = ['“Nya!! Nyaaaa!!!!”','“I remember you saying you want them! Nice taste, Haru-kun!”','“I’m pretty sure you won’t burn your toast anymore. Use it nicely, okay?”','“These are the rarest books I can find… Y--you don’t have them yet, right? I hope you like them…”','“That one has a fruity taste, especially lemon, so I’m sure you’ll like it. Also learn better pickup lines from this book. Maybe you can make a better impersonation that way.”','“Do you remember this melody?”'];
 
-var komentarArray = ['“Gaku-san…!!! I’m very touched!!! I will eat a lot of toasts from now on!! Breakfast, lunch, dinner…”<br><br>(Gaku: “No, you don’t have to go that far ^^;”)','“These….!!! I’ve been searching for them for years….!!!! Ayumu-san, thank you so much!!!!”','“Tower…!!! I want to pour the champagne!!!! Also I will learn a lot, Reiji-san!! Banzai to your beautiful eyes!”<br><br>(Reiji: “IT’S ‘CHEERS’, YOU LITTLE--)','“I do. I will always remember. Thank you very much, Sho.”'];
+var komentarArray = ['“Wonderful. Rock is nice. I wonder how I should cook it.”','“This...is very cute!!! I’m now an even cuter version of me!!!”','“Gaku-san…!!! I’m very touched!!! I will eat a lot of toasts from now on!! Breakfast, lunch, dinner…”<br><br>(Gaku: “No, you don’t have to go that far ^^;”)','“These….!!! I’ve been searching for them for years….!!!! Ayumu-san, thank you so much!!!!”','“Tower…!!! I want to pour the champagne!!!! Also I will learn a lot, Reiji-san!! Banzai to your beautiful eyes!”<br><br>(Reiji: “IT’S ‘CHEERS’, YOU LITTLE--)','“I do. I will always remember. Thank you very much, Sho.”'];
 
 
 for (var aaa = 0; aaa < checkPoints.length; aaa++) {
