@@ -922,6 +922,13 @@ $('.back').click(function() {
 });
 
 $('.hawwugifts').click(function() {
+  for (var aaa = 0; aaa < checkPoints.length; aaa++) {
+    if (localStorage.getItem("hawwugame_lasthighest") > checkPoints[aaa]) {
+      $("#gift"+aaa).find(".centered").remove();
+      $("#gift"+aaa).find("img").attr("src",realIMG[aaa]);
+      $("#gift"+aaa).addClass("unlocked");
+    }
+  }
 	$("#jumpbutton").fadeOut();
   $('#main').fadeOut();
   $('#presents').fadeIn();
