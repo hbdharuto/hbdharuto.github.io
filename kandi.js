@@ -894,6 +894,7 @@ function mainMenu() {
 
   languageChange();
   $('#progress').fadeOut();
+  localStorage.hawwugame_lasthighest = 0;
   $('#main').fadeIn();
   $('#menu').addClass('main');
   $('.sound').fadeIn();
@@ -948,16 +949,12 @@ function startGame() {
  */
 function gameOver() {
   stop = true;
-  if (localStorage.hawwugame_lasthighest !== 'undefined') {
+  
 
     if (score > localStorage.hawwugame_lasthighest) {
        localStorage.setItem("hawwugame_lasthighest", score);
      }
-  }
-
-  else {
-    localStorage.setItem("hawwugame_lasthighest", score);
-  }
+ 
   
   $('#score').html(score);
   $('#game-over').fadeIn();
