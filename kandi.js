@@ -998,7 +998,7 @@ $('.hawwugifts').click(function() {
 
 $('.unlocked').click(function() {
   arrNum = $(this).attr('id').split("gift")[1];
- $("#present_bigwindow").html('<div class="nama_hadiah"></div><table id="presentnyaho"><tr><td><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></td><td class="komentarharuto"></td><td class="ucapannya"></td><td class="gambarucapan"></td></tr></table><a href="javascript:void(0)" class="button back"></a>');
+ $("#present_bigwindow").html('<div class="nama_hadiah"></div><table id="presentnyaho"><tr><td><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></td><td class="komentarharuto"></td><td class="ucapannya"></td><td class="gambarucapan"></td></tr></table>');
   $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
   $("#present_bigwindow .gambarucapan").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
   $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
@@ -1082,7 +1082,7 @@ for (var aaa = 0; aaa < checkPoints.length; aaa++) {
 
 $('.unlocked').click(function() {
   arrNum = $(this).attr('id').split("gift")[1];
- $("#present_bigwindow").html('<div class="nama_hadiah"></div><table id="presentnyaho"><tr><td><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></td><td class="komentarharuto"></td><td class="ucapannya"></td><td class="gambarucapan"></td></tr></table><a href="javascript:void(0)" class="button back"></a>');
+ $("#present_bigwindow").html('<div class="nama_hadiah"></div><table id="presentnyaho"><tr><td><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></td><td class="komentarharuto"></td><td class="ucapannya"></td><td class="gambarucapan"></td></tr></table>');
   $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
   $("#present_bigwindow .gambarucapan").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
   $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
