@@ -262,8 +262,8 @@ padding:10px;background:#ef5350;text-align: center;color:#FAFAFA;width:100%;font
 .table {margin-top:calc((100vh - 360px) / 2); margin-left:calc((100vw - 600px) / 2);position: relative}
 
 
-@media screen and (orientation: portrait) {
-  html {
+
+.inpotrait {
     transform: rotate(-90deg);
     transform-origin: left top;
     width: 100vh;
@@ -271,6 +271,4 @@ padding:10px;background:#ef5350;text-align: center;color:#FAFAFA;width:100%;font
     overflow-x: hidden;
     position: absolute;
     top: 100%;
-    left: 0;
-  }
-}
+    left: 0;}
