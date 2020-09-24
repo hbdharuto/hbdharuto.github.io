@@ -894,7 +894,8 @@ function mainMenu() {
 
   languageChange();
   $('#progress').fadeOut();
-  localStorage.hawwugame_lasthighest = 0;
+  if (localStorage.hawwugame_lasthighest == null)
+   {localStorage.hawwugame_lasthighest = 0; }
   $('#main').fadeIn();
   $('#menu').addClass('main');
   $('.sound').fadeIn();
@@ -1107,8 +1108,8 @@ $('.lang_jpn').click(function() {
 
 function shakeChest() {
    if (localStorage.getItem("hawwugame_lasthighest") > 1499) {
-    
-    
+
+
     $("#chestbutton").css('background-image', 'url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/openchest.png)');   
     $("#chestbutton").effect( "shake", { direction: "up", times: 4, distance: 6}, 1000 );
     $('#chestbutton').click(function() {
