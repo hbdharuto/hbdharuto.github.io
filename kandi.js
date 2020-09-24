@@ -1,4 +1,43 @@
 
+var checkPoints = [100,200,400,700,1100,1500];
+var realIMG=["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/afdfd23u2098.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/suweiur24343.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/fjdkfj9e243090.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/eioie0ieowi2.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/isiea292u.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/jfdkjfd29292.png"];
+
+
+var giftIMG = ["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tikus.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/kolor.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tost.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/bukabuku.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/sampanye.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/music.png"];
+
+var faceIMG = ["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_rock.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_ruka.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_gaku.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_ayumu.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_reiji.png",
+"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_sho.png"];
+
+
+var hadiahArray = ['His biggest catch (Rat)','Ge***o Pi**e Pajamas','Transparent and anti-burn toaster','Rare Books about Yoshida Shouin','2001 Domaine Arnaud Ente Meursault, Champagne Tower, and Pickup Lines for Dummies','A custom-made music box. Music: “Le Carnaval des Animaux” No. 13, “Le Cygne”'];
+
+var ucapanArray = ['“Nya!! Nyaaaa!!!!”','“I remember you saying you want them! Nice taste, Haru-kun!”','“I’m pretty sure you won’t burn your toast anymore. Use it nicely, okay?”','“These are the rarest books I can find… Y--you don’t have them yet, right? I hope you like them…”','“That one has a fruity taste, especially lemon, so I’m sure you’ll like it. Also learn better pickup lines from this book. Maybe you can make a better impersonation that way.”','“Do you remember this melody?”'];
+
+var komentarArray = ['“Wonderful. Rock is nice. I wonder how I should cook it.”','“This...is very cute!!! I’m now an even cuter version of me!!!”','“Gaku-san…!!! I’m very touched!!! I will eat a lot of toasts from now on!! Breakfast, lunch, dinner…”<div class="othereply" style="border-color:#4e4e4e;">Gaku: “No, you don’t have to go that far ^^;”</div>','“These….!!! I’ve been searching for them for years….!!!! Ayumu-san, thank you so much!!!!”','“Tower…!!! I want to pour the champagne!!!! Also I will learn a lot, Reiji-san!! Banzai to your beautiful eyes!”<div class="othereply"  style="border-color:#028a15;">Reiji: “IT’S ‘CHEERS’, YOU LITTLE--</div>','“I do. I will always remember. Thank you very much, Sho.”'];
+
+
+var hadiahArray_JP = ['大きなねずみ','ジェ〇ピ〇のパジャマ','庫内が見える！高性能トースター','吉田松陰のレア本','年産 アルノー・アント ムルソーワインによるシャンパンタワーとサルでもわかる！演技台詞集','特注オルゴール 組曲「動物の謝肉祭」より「白鳥」'];
+
+var ucapanArray_JP = ['「ニャ！ニャーー！！！！」','「ハルくんこれ欲しいって言ってたからさ〜！絶対 似合うよ☆」','「悠人がこれ以上トーストを焦がさないように選んだんだ。大事に使ってくれよ？」','「俺が手に入れられる限界はここまでだった……。悠人はその、まだ持っていないよな？気に入ってくれると良いんだが……」','「レモンの風味が強いワイン、お前好きだろ？それからお前の為に本も入れておいてやったから。感謝して演技の糧にしろよ、悠人」','「悠人はこの曲を覚えているかい？」'];
+
+var komentarArray_JP = ['「凄いぞ、ロック。ありがとう。……さて、これをどうしたものか……」','「これは……とてもかわいいですね！これ以上かわいくなってしまうのか、俺は……！」','岳さん……！！ありがとうございます、感動しました！これから毎日、3食欠かさずこのトースターでパンを焼きます」<div class="othereply" style="border-color:#4e4e4e;">岳 「そこまでしなくていいからな！？」</div>','「これは……！！！ずっと探していたんです……！！！歩さん、ありがとうございます……！！！」','「シャンパンタワー……！！一度注いでみたかったんですよね……。本もありがとうございます、玲司さん。俺頑張りますね。君の瞳に……万歳！」<div class="othereply"  style="border-color:#028a15;">玲司 「それを言うなら『乾杯』な」</div>','「勿論覚えている。……本当にありがとう、翔」<div class="othereply"  style="border-color:#f4f4f4;">翔 「ふふ、どういたしまして♪」</div>'];
+
+
+
 
 (function ($) {
 // define variables
@@ -81,7 +120,13 @@ var assetLoader = (function() {
     'menu_lang'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_lang.png',
     'menu_gifts'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_gifts.png',
     'menu_credits'  : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_credits.png',
+    'creditsbg-JP'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/credits-bg_JP.png',
+    'menu_start-JP'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_start_jp.png',
+    'menu_lang-JP'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_lang_jp.png',
+    'menu_gifts-JP'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_gifts_jp.png',
+    'menu_credits-JP'  : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_credits_jp.png',
     'presentitle'   : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/presentitle.png',
+    'presentitle-JP': 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/presentitle_jp.png',
     'shadow1'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow1.png',
     'shadow2'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow2.png',
     'shadow3'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/shadow3.png',
@@ -102,7 +147,24 @@ var assetLoader = (function() {
     'toast'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tost.png',
     'bukbuku'       : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/bukabuku.png',
     'sampan'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/sampanye.png',
-    'music'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/music.png'
+    'music'         : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/music.png',
+    'face_haruto'   : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png',
+    'face_rock'     :'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_rock.png',
+    'face_ruka'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_ruka.png',
+    'face_gaku'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_gaku.png',
+    'face_ayumu'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_ayumu.png',
+    'face_reiji'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_reiji.png',
+    'face_sho'      : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_sho.png',
+    'openchest'     : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/openchest.png',
+    'closechest'    : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/closechest.png',
+    'movie1'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bedtimestory/2.jpg',
+    'movie2'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bedtimestory/3.jpg',
+    'movie3'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bedtimestory/4.jpg',
+    'movie4'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bedtimestory/5.jpg',
+    'movie5'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bedtimestory/6.jpg',
+    'movie6'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bedtimestory/7.jpg',
+    'movie7'        : 'https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/bedtimestory/8.jpg'
+
 }
   // sounds dictionary
   this.sounds      = {
@@ -830,6 +892,7 @@ function mainMenu() {
     }
   }
 
+  languageChange();
   $('#progress').fadeOut();
   $('#main').fadeIn();
   $('#menu').addClass('main');
@@ -941,6 +1004,48 @@ $("#jumpbutton").click(function() {
     player.anim.update();
 }); 
 
+
+function languageChange(){
+  if (localStorage.hawwugame_language == "jp") {
+    
+    $('.button.play').find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_start_jp.png');
+    $('.button.lang').find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_lang_jp.png');
+    $('.button.hawwugifts').find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_gifts_jp.png');
+    $('.button.credits').find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_credits_jp.png');
+
+    $('#game-over h2').html('悠人は <span id="score"></span> メートル走りました');
+    $('#game-over').find('.restart').html('もう一度');
+    $('#game-over').find('.back').html('メインメニュー');
+    $("#present_title").find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/presentitle_jp.png');
+
+    $("#credits").css('background-image', 'url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/credits-bg_JP.png)');
+
+    $('#credits').find(".content").html('<ul><li>イラスト <a href="https://twitter.com/axenyan/">axe☆</a> & <a href="https://twitter.com/_diesyrae">Yaeeee★</a> @ twitter</li><li>構成 <a href="https://twitter.com/_diesyrae">Yaeeee★</a> @ twitter</li><li>各種素材 <a href="https://bayat.itch.io/platform-game-assets">Bayat Games</a></li><li>プログラミング <a href="https://github.com/straker/endless-runner-html5-game">Steven Lambert</a></li><li>翻訳 <a href="https://twitter.com/4ma_0806">しまこ</a> @ Twitter</li><li></li><li>Presented by <a href="https://twitter.com/bundanyaharuto">mochmoch</a> @ Twitter</li></ul>');
+     
+
+
+  }
+
+  else {
+
+    $('.button.play').find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_start.png');
+    $('.button.lang').find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_lang.png');
+    $('.button.hawwugifts').find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_gifts.png');
+    $('.button.credits').find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu_credits.png');
+
+    $('#game-over h2').html('Haruto ran <span id="score"></span> meters!');
+    $('#game-over').find('.restart').html('Try Again?');
+    $('#game-over').find('.back').html('Main Menu');
+    $("#present_title").find('img').attr('src','https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/presentitle.png');
+
+    $("#credits").css('background-image', 'url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/credits-bg.png)');
+
+    $('#credits').find(".content").html('<ul><li>Character Art: <a href="https://twitter.com/axenyan/">axe☆</a> & <a href="https://twitter.com/_diesyrae">Yaeeee★</a> @ twitter</li><li>Layout: <a href="https://twitter.com/_diesyrae">Yaeeee★</a> @ twitter</li><li>Game Assets: <a href="https://bayat.itch.io/platform-game-assets">Bayat Games</a></li><li>Base Codes: <a href="https://github.com/straker/endless-runner-html5-game">Steven Lambert</a></li><li>Translation: <a href="https://twitter.com/4ma_0806">しまこ</a> @ Twitter</li><li></li><li>Presented by <a href="https://twitter.com/bundanyaharuto">mochmoch</a> @ Twitter</li></ul>');
+     
+
+  }
+}
+
 /**
  * Click handlers for the different menu screens
  */
@@ -957,11 +1062,31 @@ $('.back').click(function() {
   $('#game-over').fadeOut();
   $('#lang').fadeOut();
   //$('#canvas').fadeOut();
+
+  
+  languageChange();
+
+
   $('#main').fadeIn();
   $('#menu').fadeIn();
   $('#menu').removeClass('credits');
    $('#menu').removeClass('hawwugifts');
 });
+
+$('.back_movie').click(function() {
+
+  $('#movie').fadeOut();
+
+});
+
+
+$('#chestbutton').click(function() {
+
+  $('#movie').fadeIn();
+
+});
+
+
 
 $('.lang').click(function() {
   $("#jumpbutton").fadeOut();
@@ -973,6 +1098,7 @@ $('.lang').click(function() {
 
 $('.lang_eng').click(function() {
   localStorage.hawwugame_language = "en";
+  languageChange();
   $('#lang').fadeOut();
   $('#main').fadeIn();
   $('#menu').removeClass('lang');
@@ -980,14 +1106,25 @@ $('.lang_eng').click(function() {
 
 $('.lang_jpn').click(function() {
   localStorage.hawwugame_language = "jp";
+  languageChange();
   $('#lang').fadeOut();
   $('#main').fadeIn();
   $('#menu').removeClass('lang');
+
 });
 
+function shakeChest() {
+   if (localStorage.getItem("hawwugame_lasthighest") > 1499) {
+    $("#chestbutton").css('background-image', 'url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/openchest.png)');   
+    $("#chestbutton").effect( "shake", { direction: "up", times: 4, distance: 6}, 1000 );
+
+  }
+
+  
+}
 
 
-$('.hawwugifts').click(function() {
+function loadGifts() {
   for (var aaa = 0; aaa < checkPoints.length; aaa++) {
     if (localStorage.getItem("hawwugame_lasthighest") > checkPoints[aaa]) {
       $("#gift"+aaa).find(".centered").remove();
@@ -1001,13 +1138,38 @@ $('.unlocked').click(function() {
  $("#present_bigwindow").html('<div class="nama_hadiah"></div><table id="presentnyaho"><tr><td><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></td><td class="komentarharuto"></td><td class="ucapannya"></td><td class="gambarucapan"></td></tr></table>');
   $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
   $("#present_bigwindow .gambarucapan").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
-  $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
-  $("#present_bigwindow .komentarharuto").append(komentarArray[arrNum]);
-  $("#present_bigwindow .nama_hadiah").append(hadiahArray[arrNum]);
+  
+  if (localStorage.hawwugame_language == "jp") {
+    $("#present_bigwindow .ucapannya").append(ucapanArray_JP[arrNum]);
+    $("#present_bigwindow .komentarharuto").append(komentarArray_JP[arrNum]);
+    $("#present_bigwindow .nama_hadiah").append(hadiahArray_JP[arrNum]);
+  }
+
+  else {
+    $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
+    $("#present_bigwindow .komentarharuto").append(komentarArray[arrNum]);
+    $("#present_bigwindow .nama_hadiah").append(hadiahArray[arrNum]);
+  }
+
+  
   $("#present_bigwindow").fadeIn();
 
 
 });
+
+shakeChest();
+}
+
+
+var newtime = 10000;
+setInterval(shakeChest, newtime);
+
+$('.hawwugifts').click(function() {
+  
+  
+  loadGifts();
+
+
 
 	$("#jumpbutton").fadeOut();
   $('#main').fadeOut();
@@ -1041,57 +1203,10 @@ $('.sound').click(function() {
   }
 });
 
-var checkPoints = [100,200,400,700,1100,1500];
-var realIMG=["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/afdfd23u2098.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/suweiur24343.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/fjdkfj9e243090.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/eioie0ieowi2.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/isiea292u.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/jfdkjfd29292.png"];
 
 
-var giftIMG = ["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tikus.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/kolor.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/tost.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/bukabuku.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/sampanye.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/music.png"];
-
-var faceIMG = ["https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_rock.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_ruka.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_gaku.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_ayumu.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_reiji.png",
-"https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_sho.png"];
 
 
-var hadiahArray = ['His biggest catch (Rat)','Ge***o Pi**e Pajamas','Transparent and anti-burn toaster','Rare Books about Yoshida Shouin','2001 Domaine Arnaud Ente Meursault, Champagne Tower, and Pickup Lines for Dummies','A custom-made music box. Music: “Le Carnaval des Animaux” No. 13, “Le Cygne”'];
-
-var ucapanArray = ['“Nya!! Nyaaaa!!!!”','“I remember you saying you want them! Nice taste, Haru-kun!”','“I’m pretty sure you won’t burn your toast anymore. Use it nicely, okay?”','“These are the rarest books I can find… Y--you don’t have them yet, right? I hope you like them…”','“That one has a fruity taste, especially lemon, so I’m sure you’ll like it. Also learn better pickup lines from this book. Maybe you can make a better impersonation that way.”','“Do you remember this melody?”'];
-
-var komentarArray = ['“Wonderful. Rock is nice. I wonder how I should cook it.”','“This...is very cute!!! I’m now an even cuter version of me!!!”','“Gaku-san…!!! I’m very touched!!! I will eat a lot of toasts from now on!! Breakfast, lunch, dinner…”<br><br>(Gaku: “No, you don’t have to go that far ^^;”)','“These….!!! I’ve been searching for them for years….!!!! Ayumu-san, thank you so much!!!!”','“Tower…!!! I want to pour the champagne!!!! Also I will learn a lot, Reiji-san!! Banzai to your beautiful eyes!”<br><br>(Reiji: “IT’S ‘CHEERS’, YOU LITTLE--)','“I do. I will always remember. Thank you very much, Sho.”'];
-
-
-for (var aaa = 0; aaa < checkPoints.length; aaa++) {
-  	if (localStorage.getItem("hawwugame_lasthighest") > checkPoints[aaa]) {
-  		$("#gift"+aaa).find(".centered").remove();
-  		$("#gift"+aaa).find("img").attr("src",realIMG[aaa]);
-  		$("#gift"+aaa).addClass("unlocked");
-  	}
-  }
-
-$('.unlocked').click(function() {
-  arrNum = $(this).attr('id').split("gift")[1];
- $("#present_bigwindow").html('<div class="nama_hadiah"></div><table id="presentnyaho"><tr><td><img src="https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/gifts/faceonly_haruto.png" style="width:70px!important"></td><td class="komentarharuto"></td><td class="ucapannya"></td><td class="gambarucapan"></td></tr></table>');
-  $("#present_bigwindow").prepend('<img src="'+ giftIMG[arrNum] +'">');
-  $("#present_bigwindow .gambarucapan").append('<img src="'+ faceIMG[arrNum] +'" style="width:70px!important">');
-  $("#present_bigwindow .ucapannya").append(ucapanArray[arrNum]);
-  $("#present_bigwindow .komentarharuto").append(komentarArray[arrNum]);
-  $("#present_bigwindow .nama_hadiah").append(hadiahArray[arrNum]);
-  $("#present_bigwindow").fadeIn();
-
-
-});
 $('#present_bigwindow').click(function() {
 
 	$(this).fadeOut();
@@ -1140,4 +1255,152 @@ document.addEventListener("touchstart", event => {
         event.stopPropagation(); // maybe useless
     }
 }, {passive: false});
+
+
+
+/*
+* Author:      Marco Kuiper (http://www.marcofolio.net/)
+*/
+
+/* Time to preview a preview */
+var BASICPTIME = 3000;
+var PREVIEWTIME = 3000;
+var DELAYTIME = 1500;
+
+ google.charts.load('current', {packages: ['corechart']});
+
+
+google.charts.setOnLoadCallback(function()
+{
+  // Set the opacity for the movie overlay (start screen)
+  $("#overlaybg").fadeTo(0, 0.1);
+  
+  $("#movieoverlay").click(function(){
+    $(this).fadeOut(function(){
+      setTimeout("animatePreviews()", 500); 
+    }); 
+  });
+});
+
+/* Variable to store which preview is currently viewed */
+var currentPreview = -1;
+
+/**
+* Animates the previews
+*/
+function animatePreviews() {
+  currentPreview++;
+  if (currentPreview == $(".preview").length) {$("#end_thing").fadeIn();}
+  
+  if( $(".preview:eq("+currentPreview+")").hasClass("prevtext") ) {
+    animateTextPreview($(".preview:eq("+currentPreview+")"));
+  } else if ( $(".preview:eq("+currentPreview+")").hasClass("previmgtotop") ) {
+    animateImagePreviewToTop($(".preview:eq("+currentPreview+")"));
+  }else if ( $(".preview:eq("+currentPreview+")").hasClass("previmgtobottom") ) {
+    animateImagePreviewToBottom($(".preview:eq("+currentPreview+")"));
+  } else if ( $(".preview:eq("+currentPreview+")").hasClass("previmgstay") ){
+    animateImagePreviewStay($(".preview:eq("+currentPreview+")"));
+
+  }else if ( $(".preview:eq("+currentPreview+")").hasClass("previmgright") ){
+    animateImagePreviewRight($(".preview:eq("+currentPreview+")"));
+
+  }
+
+  else { 
+    animateImagePreviewLeft($(".preview:eq("+currentPreview+")"));
+  }
+}
+
+function animateTextPreview(previewElement) {
+  PREVIEWTIME = (7/12) * BASICPTIME;
+  $(previewElement)
+    .fadeIn("slow")
+    .animate({
+      letterSpacing : "0px"
+    }, PREVIEWTIME)
+    .fadeOut("slow", function(){
+      animatePreviews();
+    });
+}
+
+function animateImagePreviewLeft(previewElement) {
+PREVIEWTIME = (2/3) * BASICPTIME;
+  $(previewElement)
+    .fadeIn("slow")
+    .children('img').animate({ left : "0px"} , PREVIEWTIME);
+  
+  setTimeout(function() {
+          $(previewElement).fadeOut("slow", function(){
+      animatePreviews();
+    });
+       }, PREVIEWTIME+DELAYTIME);
+}
+function animateImagePreviewRight(previewElement) {
+  PREVIEWTIME = BASICPTIME;
+  $(previewElement)
+    .fadeIn("slow")
+    .children('img').animate({ left : "-100px"} , PREVIEWTIME);
+  setTimeout(function() {
+          $(previewElement).fadeOut("slow", function(){
+      animatePreviews();
+    });
+       }, PREVIEWTIME+DELAYTIME);
+}
+
+function animateImagePreviewToTop(previewElement) {
+  PREVIEWTIME = (2/3) * BASICPTIME;
+  $(previewElement)
+    .fadeIn("slow")
+    .children('img').animate({ top : "-200px"} , PREVIEWTIME);
+  
+  setTimeout(function() {
+          $(previewElement).fadeOut("slow", function(){
+      animatePreviews();
+    });
+       }, PREVIEWTIME+DELAYTIME);
+}
+
+function animateImagePreviewToBottom(previewElement) {
+  PREVIEWTIME = (2/3) * BASICPTIME;
+  $(previewElement)
+    .fadeIn("slow")
+    .children('img').animate({ top : "-100px"} , PREVIEWTIME);
+  
+  setTimeout(function() {
+          $(previewElement).fadeOut("slow", function(){
+      animatePreviews();
+    });
+       }, PREVIEWTIME+DELAYTIME);
+}
+
+function animateImagePreviewStay(previewElement) {
+  PREVIEWTIME = BASICPTIME;
+  if ((currentPreview < 2) && (currentPreview > -1)) {PREVIEWTIME = (2/3) * BASICPTIME;}
+  $(previewElement)
+    .fadeIn("slow")
+    .animate({ marginTop : "0px"} , PREVIEWTIME)
+    .fadeOut((BASICPTIME/6), function(){
+      animatePreviews();
+    });
+}
+
+function replayTrailer(){
+  
+  currentPreview = -1;
+  setTimeout("animatePreviews()", 200);
+  $(".previmgtobottom img").css({ top: '-200px' });
+  $(".previmgright img").css({ left: '0px' });
+  $(".previmgleft img").css({ left: '-100px' });
+  $(".previmgtotop img").css({ top:'0px' });
+
+
+}
+
+function changeSpeed(newdivider){
+BASICPTIME = 3000 / newdivider;
+PREVIEWTIME = BASICPTIME;
+DELAYTIME = 1500 / newdivider;
+}
+
+
 

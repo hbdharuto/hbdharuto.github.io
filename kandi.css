@@ -57,9 +57,7 @@ a {
 #menu.main {
   background-image: url('https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/menu-bg.png');
 }
-#menu.credits {
-  background-image: url('https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/credits-bg.png');
-}
+
 
 #progress {
   height: 12%;
@@ -172,7 +170,7 @@ margin-top: 170px;
 }
 
 
-#presents .button.back, #credits .button.back,  #lang .button.back  {
+#presents .button.back, #credits .button.back,  #lang .button.back, .button.back_movie {
   background-image:url(https://raw.githubusercontent.com/hbdharuto/hbdharuto.github.io/master/imgs/button_close.png);
   background-size:cover;
    display: block;
@@ -189,27 +187,26 @@ margin-top: 170px;
 
 #credits {
   display: none;
-  line-height: 30px;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  line-height: 20px;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+padding-top: 143px;
+font-size: 14px;
+font-weight: 400;
 }
 #credits li {
   padding: 5px 0;
 }
 
-.artwork, .music, .developer {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
 
-.artwork {
-  color: #fa8526;
-}
-.music {
-  color: #e6e71f;
-}
-.developer {
-  color: #13eb8a;
+#credits a {
+
+  font-weight:700;
+  color:#ef5350;
 }
 
 .back, .back:hover {
@@ -305,4 +302,60 @@ width:40%;
 .komentarharuto {
 width:40%;
   background-color:#aed7f9;
+}
+
+#chestbutton {
+  background-image: url(imgs/gifts/closechest.png);
+background-size: cover;
+width: 48px;
+height: 50px;
+position: absolute;
+bottom: 25px;
+left: 25px;
+cursor: pointer;
+}
+
+
+.othereply {text-align: left;
+margin-top: 10px;
+border-left: 4px solid #00437b;
+padding-left: 4px;}
+
+
+
+/* COMMON CLASSES */
+.break { clear:both; }
+
+/* WRAPPER */
+#wrapper {}
+
+/* THEATER */
+#theater { width: 600px;
+height: 360px;
+overflow: hidden;
+background-color: #1b1717;
+position: absolute;
+top: 0px;
+left: 0px;}
+
+.previmgstay img, .previmgleft img , .previmgright img  {height:360px;}
+
+.playbutton { position:absolute; margin:130px 0 0 230px; }
+#movieoverlay, #end_thing { height:100%; cursor:pointer;text-align:center;opacity:0.7 }
+#overlaybg { background-color:#000; height:100%; width:100%;}
+
+.preview, #end_thing { display:none;height:360px; }
+
+
+
+
+#movie {
+   display: none;
+  text-align: center;
+  padding:20px; padding-top:180px;
+  z-index: 11;
+  width: 600px;
+  height: 360px;
+  position: absolute;
+  
 }
