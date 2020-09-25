@@ -915,7 +915,7 @@ function startGame() {
   stop = false;
   score = 0;
   for (var aaa = 0; aaa < checkPoints.length; aaa++) {
-  	if (localStorage.getItem("hawwugame_lasthighest") > checkPoints[aaa]) {
+  	if (localStorage.getItem("hawwugame_lasthighest") >= checkPoints[aaa]) {
   		score = checkPoints[aaa];
   	}
   }
