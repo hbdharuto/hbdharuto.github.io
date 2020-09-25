@@ -30,7 +30,7 @@ var ucapanArray = ['“Nya!! Nyaaaa!!!!”','“I remember you saying you want t
 var komentarArray = ['“Wonderful. Rock is nice. I wonder how I should cook it.”','“This...is very cute!!! I’m now an even cuter version of me!!!”','“Gaku-san…!!! I’m very touched!!! I will eat a lot of toasts from now on!! Breakfast, lunch, dinner…”<div class="othereply" style="border-color:#4e4e4e;">Gaku: “No, you don’t have to go that far ^^;”</div>','“These….!!! I’ve been searching for them for years….!!!! Ayumu-san, thank you so much!!!!”','“Tower…!!! I want to pour the champagne!!!! Also I will learn a lot, Reiji-san!! Banzai to your beautiful eyes!”<div class="othereply"  style="border-color:#028a15;">Reiji: “IT’S ‘CHEERS’, YOU LITTLE--</div>','“I do. I will always remember. Thank you very much, Sho.”'];
 
 
-var hadiahArray_JP = ['大きなねずみ','ジェ〇ピ〇のパジャマ','庫内が見える！高性能トースター','吉田松陰のレア本','年産 アルノー・アント ムルソーワインによるシャンパンタワーとサルでもわかる！演技台詞集','特注オルゴール 組曲「動物の謝肉祭」より「白鳥」'];
+var hadiahArray_JP = ['大きなねずみ','ジェ〇ピ〇のパジャマ','庫内が見える！高性能トースター','吉田松陰のレア本','2001年産 アルノー・アント ムルソーワインによるシャンパンタワーとサルでもわかる！演技台詞集','特注オルゴール 組曲「動物の謝肉祭」より「白鳥」'];
 
 var ucapanArray_JP = ['「ニャ！ニャーー！！！！」','「ハルくんこれ欲しいって言ってたからさ〜！絶対 似合うよ☆」','「悠人がこれ以上トーストを焦がさないように選んだんだ。大事に使ってくれよ？」','「俺が手に入れられる限界はここまでだった……。悠人はその、まだ持っていないよな？気に入ってくれると良いんだが……」','「レモンの風味が強いワイン、お前好きだろ？それからお前の為に本も入れておいてやったから。感謝して演技の糧にしろよ、悠人」','「悠人はこの曲を覚えているかい？」'];
 
