@@ -980,7 +980,7 @@ $("#jumpbutton").click(function() {
      jumpCounter = Math.max(jumpCounter-1, 0);
 
 
-    this.advance();
+    player.advance();
 
     // add gravity
     if (player.isFalling || player.isJumping) {
