@@ -964,6 +964,8 @@ function gameOver() {
   assetLoader.sounds.gameOver.play();
 }
 
+var jumpCounter = 0;
+
 $("#jumpbutton").click(function() {
   if (player.dy === 0 && !player.isJumping) {
       player.isJumping = true;
